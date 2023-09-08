@@ -1,5 +1,7 @@
 package loops;
 
+import java.util.Scanner;
+
 public class DoWhileLoop {
     public static void main(String[] args) {
         /*
@@ -10,5 +12,15 @@ public class DoWhileLoop {
         Kullanicidan bir sayi girmesini isteyin
         Sayi sifira esit olana kadar dongunun tekrar calismasini saglayin
         */
+        Scanner input = new Scanner(System.in);
+        int n;
+
+        do{
+            System.out.println("Sayi giriniz");
+            n = input.nextInt();
+        }while (n > 0 || n < 0);
+//      }while (n != 0);
+
+        System.out.println("Sifiri buldunuz");
     }
 }
